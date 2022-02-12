@@ -1,2 +1,0 @@
-# Fish-Diseases
-University project
