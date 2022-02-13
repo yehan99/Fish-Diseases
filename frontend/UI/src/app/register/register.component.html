@@ -1,40 +1,80 @@
-
 <div class="p-d-flex p-jc-center" style="margin-top: 5%;">
-    <div class="p-mr-2">
-      <p-card class="login-card" header
-        [style]="{'width': '25rem', 'margin-bottom': '2em', 'padding': '10px', 'background-color': '#2c2b2b'}">
-        <ng-template pTemplate="header">
-            <h1 class ="p-d-inline" style="margin-left: 10px;">Register</h1>
-            <i class="fa-solid fa-door-open p-d-inline fa-2x" style="float: right; margin-right: 30px; padding-top: 10px; color: #fce399;"></i>
-          </ng-template>
-          
-            
-          <div class="p-fluid" style="margin-top: 50px;">
-            <div class="p-field">
+  <div class="p-mr-2">
+    <p-card class="login-card" header
+      [style]="{'width': '50rem', 'margin-bottom': '2em', 'padding': '10px', 'background-color': '#2c2b2b'}">
+      <ng-template pTemplate="header">
+        <h1 class="p-d-inline" style="margin-left: 10px;">Register</h1>
+        <i class="fa-solid fa-door-open p-d-inline fa-2x"
+          style="float: right; margin-right: 30px; padding-top: 10px; color: #fce399;"></i>
+      </ng-template>
+
+
+      <div class="p-fluid regForm" >
+     
+        <div class="p-fluid p-formgrid p-grid">
+            <div class="p-field p-col ">
               <span class="p-float-label">
-                <input type="text" id="inputtext" pInputText style="width: 100%;">
-                <label for="inputtext">Username</label>
+                <input type="text" id="inputtext" pInputText>
+                <label for="inputtext">Firstname</label>
               </span>
-            </div> 
-            <div class="p-field" style="margin-top: 30px;">
+            </div>
+            <div class="p-field p-col ">
               <span class="p-float-label">
-                <p-password inputId="password" [toggleMask]="true" style="width: 100% !important; "></p-password>
+                <input type="text" id="inputtext" pInputText>
+                <label for="inputtext">Lastname</label>
+              </span>
+            </div>
+          </div>
+
+          <div class="p-fluid p-formgrid p-grid">
+            <div class="p-field p-col">
+              <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText >
+                <label for="inputtext">Email</label>
+              </span>
+            </div>
+            <div class="p-field p-col">
+              <span class="p-float-label">
+                <p-inputMask mask="(999) 999-9999"  placeholder=""></p-inputMask>
+                <label for="inputtext">Contact Number</label>
+              </span>
+            </div>
+          </div>
+
+          <div class="p-fluid p-formgrid p-grid">
+            <div class="p-field p-col">
+              <span class="p-float-label">
+                <p-password  [toggleMask]="true"></p-password>
                 <label for="inputtext">Password</label>
               </span>
-            </div> <br/>
-  
-            <div class="p-field">
-              <span class="p-float-label">
-                  <button pButton pRipple type="button" label="Register" class="p-button-warning" style="width: 100%;"></button>
-                </span>
             </div>
-            <p style="text-align: center;">Already have an account <a  style=" color: #0bc8fe !important;">Login</a></p>
-           
+            <div class="p-field p-col">
+              <span class="p-float-label">
+                <p-password  [toggleMask]="true"></p-password>
+                <label for="inputtext">Confirm Password</label>
+              </span>
+            </div>
           </div>
-        
-  
-      </p-card>
-  
-    </div>
+
+       
+
+        <div class="p-field">
+          <span class="p-float-label">
+            <button pButton pRipple type="button" label="Register" class="p-button-warning"
+              style="width: 100%;"></button>
+          </span>
+        </div>
+        <p style="text-align: center;">Already have an account <a style=" color: #0bc8fe !important;">Login</a></p>
+
+      </div>
+
+
+    </p-card>
+
   </div>
-  
+</div>
+
+
+
+
+

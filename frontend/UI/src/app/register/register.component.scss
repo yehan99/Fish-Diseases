@@ -1,0 +1,25 @@
+// desktop responsive
+@media only screen and(min-width: 600px){
+    .regForm{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+// mobile responsive
+@media only screen and (max-width: 600px) {
+    ::ng-deep .p-component {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: normal;
+        width: 24rem !important;
+    }
+    .regForm{
+        display: block;
+        margin-left: -7%;
+    }
+    
+  }
