@@ -7,7 +7,7 @@ import { PrimeNGConfig } from 'primeng-lts/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'UI';
+  title = 'Dieseas Predictin System';
 
   constructor(private primengConfig: PrimeNGConfig) {}
 
