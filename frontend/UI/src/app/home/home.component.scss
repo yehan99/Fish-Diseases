@@ -1,0 +1,116 @@
+.card-top{
+    cursor: pointer;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+
+.card:hover{
+    transform: scale(1.08);
+    transition: all ease-in-out .3s;
+}
+
+::ng-deep .p-chip {
+    align-items: center;
+    display: inline-flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #7cb4f5;
+}
+
+::ng-deep .card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 100%;
+}
+
+// desktop responsive
+@media only screen and(min-width: 600px){
+    .heading{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 70px;
+        font-weight: bolder;
+    }
+    .card-box{
+        margin-left: 15%;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .button-tag{
+        margin-left: 10px;
+    }
+    .row3 , .row4, .row5, .row6{
+        margin-top: 50px;
+        padding: 50px;
+    }
+    .home-img{
+        width: 1000px;
+    }
+
+    .row5{
+        padding-left: 10%;
+    }
+
+    .newsletter{
+        background-color: #333232;
+        border-radius: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top:40px;
+        padding-bottom: 30px;
+    }
+
+
+   
+}
+
+
+
+
+
+// mobile responsive
+@media only screen and(max-width: 600px){
+    .carousel-item{
+        height: 400px;
+    } 
+    .carousel-item img{
+        position: centered;
+        object-fit:cover;
+        top: 0;
+        left: 0;
+        min-height: 400px;
+    }
+
+    .heading{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .box-wrapper{
+        padding: 20px;
+    }
+    .card-box{
+        display: block !important;
+        margin: 10px;
+    }
+    .row3 , .row4, .row5, .row6{
+        margin-top: 40px;
+        padding: 20px;   
+    }
+    .home-img{
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .newsletter{
+        display: block;
+        margin: auto;
+        background-color: #333232;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

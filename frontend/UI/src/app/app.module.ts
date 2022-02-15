@@ -15,6 +15,8 @@ import {CardModule} from 'primeng-lts/card';
 import {InputTextModule} from 'primeng-lts/inputtext';
 import {InputMaskModule} from 'primeng-lts/inputmask';
 import {PasswordModule} from 'primeng-lts/password';
+import { ChipModule } from 'primeng-lts/chip';
+import {CarouselModule} from 'primeng-lts/carousel';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {PasswordModule} from 'primeng-lts/password';
     CardModule,
     InputTextModule,
     InputMaskModule,
-    PasswordModule
+    PasswordModule,
+    ChipModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
